@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>年复一年，日复一日文章</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="renderer" content="webkit">
+    <meta name="baidu-site-verification" content="R9XA5lWxu2" />
+    <meta name="author" content="年复一年，日复一日">
+    <meta name="keywords" content="技术分享">
+    <meta name="description" content="技术分享">
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/build.css">
+    <link rel="stylesheet" type="text/css" href="../css/activity.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css" >
+    <link rel="stylesheet" type="text/css" href="../css/zzsc.css" >
+    <link rel="stylesheet" type="text/css" href="../css/dlzc.css">
+    <link rel="stylesheet" type="text/css" href="../css/nanoscroller.css">
+
+    <script language="javascript" type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../js/main.js"></script>
+    <script language="javascript" type="text/javascript" src="../js/popwin-other.js"></script>
+    <script src="https://cdn.bootcss.com/marked/0.7.0/marked.js"></script>
+    <script language="javascript" type="text/javascript">
+        function ParseMarkDown(){
+            var tittle = 'git相关命令';
+            var text =
+            '```xml\n' +
+                '#查看git配置\n' +
+                '$ git config --local -l\n' +
+                '```\n' +
+                '![](https://img2020.cnblogs.com/blog/1911127/202003/1911127-20200307225422599-804145016.png)\n' +
+                '\n' +
+                '### .gitignore\n' +
+                '```\n' +
+                'HELP.md\n' +
+                'target/\n' +
+                '!.mvn/wrapper/maven-wrapper.jar\n' +
+                '!**/src/main/**\n' +
+                '!**/src/test/**\n' +
+                '\n' +
+                '### STS ###\n' +
+                '.apt_generated\n' +
+                '.classpath\n' +
+                '.factorypath\n' +
+                '.project\n' +
+                '.settings\n' +
+                '.springBeans\n' +
+                '.sts4-cache\n' +
+                '\n' +
+                '### IntelliJ IDEA ###\n' +
+                '.idea/\n' +
+                '*.iws\n' +
+                '*.iml\n' +
+                '*.ipr\n' +
+                '\n' +
+                '### NetBeans ###\n' +
+                '/nbproject/private/\n' +
+                '/nbbuild/\n' +
+                '/dist/\n' +
+                '/nbdist/\n' +
+                '/.nb-gradle/\n' +
+                'build/\n' +
+                '\n' +
+                '### VS Code ###\n' +
+                '.vscode/\n' +
+                '```\n' +
+                '* 空行或是以#开头的行即注释行将被忽略。\n' +
+                '* 可以在前面添加正斜杠/来避免递归(以斜杠 “/” 结尾表示目录)。\n' +
+                '* 可以在后面添加正斜杠/来忽略文件夹，例如build/即忽略build文件夹。\n' +
+                '* 可以使用!来否定忽略，即比如在前面用了*.apk，然后使用!a.apk，则这个a.apk不会被忽略。\n' +
+                '* 用来匹配零个或多个字符，如.[oa]忽略所有以".o"或".a"结尾，*忽略所有以结尾的文件（这种文件通常被许多编辑器标记为临时文件）；[]用* 来匹配括号内的任一字符，如[abc]，也可以在括号内加连接符，如[0-9]匹配0至9的数；?用来匹配单个字符。\n' +
+                '* 以星号 “*” 通配多个字符；\n' +
+                '* 以问号 “?” 通配单个字符;\n' +
+                '* 以方括号 “[]” 包含单个字符的匹配列表；\n' +
+                '* 以叹号 “!” 表示不忽略(跟踪)匹配到的文件或目录；\n';
+
+            document.getElementById('article').innerHTML = marked(text);
+            document.getElementById('tittle').innerHTML = tittle;
+        };
+        window.onload = ParseMarkDown;
+    </script>
+       
+</head>
+
+<body style="overflow-x:hidden">
+
+<header id="top" role="banner" class="transition">
+    <div class="container">
+        <div class="navbar-header transition">
+            <a href="../index.html" title="首页"><img src="../images/logo.png" alt="年复一年，日复一日" title="首页" /></a>
+        </div>
+        <ul class="nav navbar-nav navbar-left" id="jsddm">
+            <li class="nav-news js-show-menu"><a href="../articles.html" target="_blank">随笔</a></li>
+            <li class="nav-news"><a href="../index.html" target="_blank">博客<span class="nums-prompt nums-prompt-topic"></span></a></li>
+            <li class="nav-news"><a href="../notes.html" target="_blank">笔记</a></li>
+            <li class="nav-news"><a href="../shares.html" target="_blank">分享<span class="nums-prompt"></span></a></li>
+        </ul>
+    </div>
+</header>
+    <div class="row" style="margin-top: 70px;">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 zuo">
+            <div class="zuo_left">
+                <span>时间：2018年7月7日</span>
+            </div>
+            <div class="you_left">
+                <span><<  上一篇 </span>
+                <span> 下一篇  >></span>
+            </div>
+           <!-- <div style="clear: both;"></div>-->
+            <div class="zhong">
+                <h1 id="tittle"></h1>
+                <div id="article"></div>
+                <br/>
+                <br/>
+                <p><b><i>革命尚未成功，同志仍需努力！</i></b></p>
+            </div>
+            <div class="di_bu">
+                <p>小站说明：本站仅供学习使用，请在24小时内删除，本人不承担任何相关责任！</p>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+
+<footer class="footer">
+    <div class="container copy-right" style="text-align: center;">
+            <span> Copyright 2018 <a href="../#"> 年复一年，日复一日 </a> 邮箱:17737157627@163.com <img src="../images/pic.gif" style="width: 45px;"></span>
+    </div>
+</footer>
+<script type="text/javascript" src="../js/mouse.js"></script>
+
+</body>
+
+</html>

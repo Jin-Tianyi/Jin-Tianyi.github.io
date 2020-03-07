@@ -8,10 +8,10 @@ var articles =[
 		"date":"2020-03-06"
 	},
 	{
-		"title":"SpringBoot多环境配置1",
+		"title":"git相关命令",
 		"url":"articles/article1.html",
-		"picture":"sy-img/p1.png",
-		"preview":"一、使用properties\n用法添加多个环境配置文件application-{profile}.properties，在application.properties中激活",
+		"picture":"sy-img/p2.png",
+		"preview":"#查看git配置<br>$ git config --local -l",
 		"date":"2020-03-06"
 	},
 	{
